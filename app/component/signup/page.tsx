@@ -108,13 +108,22 @@ export default function Signup() {
                   </div>
       
                   <div className="flex justify-center space-x-6 mb-8">
-                    <button className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
+                    <button 
+                    type="button"
+                    title="Google"
+                    className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
                       <FcGoogle  className="w-6 h-6 text-red-500" />
                     </button>
-                    <button className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
+                    <button
+                    type="button"
+                    title="Facebook"
+                    className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
                       <FaFacebook  className="w-6 h-6 text-blue-600" />
                     </button>
-                    <button className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
+                    <button
+                    type="button"
+                    title="Github"
+                    className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
                       <AiFillGithub  className="w-6 h-6 text-white" />
                     </button>
                   </div>

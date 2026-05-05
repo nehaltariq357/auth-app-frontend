@@ -52,7 +52,7 @@ export default function Login() {
     <form onSubmit={handleSubmit}>
       <div className="min-h-screen bg-[#0a0a0a] text-white flex items-center justify-center p-4 overflow-hidden relative">
         {/* Background Decorative Blobs */}
-        <div className="absolute top-[-10%] left-[-5%] w-[400px] h-[400px] bg-purple-900/20 rounded-full blur-[120px]" />
+        <div className="absolute top-[-10%] left-[-5%] w-100 h-100 bg-purple-900/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-5%] w-[350px] h-[350px] bg-blue-900/20 rounded-full blur-[120px]" />
 
         <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
@@ -72,13 +72,13 @@ export default function Login() {
           {/* Right Side: Login Card */}
           <div className="flex justify-center lg:justify-end relative">
             {/* Glowing Circle behind the card */}
-            <div className="absolute -top-16 -left-16 w-48 h-48 rounded-full border-2 border-blue-500/50 bg-gradient-to-br from-purple-600/30 to-blue-600/30 blur-sm" />
+            <div className="absolute -top-16 -left-16 w-48 h-48 rounded-full border-2 border-blue-500/50 bg-linear-to-br from-purple-600/30 to-blue-600/30 blur-sm" />
 
             <div className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 lg:p-10 shadow-2xl">
               <div className="mb-8">
                 <h2 className="text-3xl font-semibold">Login</h2>
                 <p className="text-gray-400 text-sm mt-1">
-                  Glad you're back..!
+                  Glad you&apos;re back..!
                 </p>
               </div>
 
@@ -119,7 +119,7 @@ export default function Login() {
 
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-lg font-semibold bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/20"
+                  className="w-full py-3 rounded-lg font-semibold bg-linear-to-r from-blue-500 to-purple-600 hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/20"
                 >
                   Login
                 </button>
@@ -134,6 +134,8 @@ export default function Login() {
                 </div>
               </div>
 
+              {/* Social Login Buttons */}
+
               <div className="relative my-8">
                 <div className="absolute inset-0 flex items-center">
                   <span className="w-full border-t border-gray-800"></span>
@@ -144,20 +146,29 @@ export default function Login() {
               </div>
 
               <div className="flex justify-center space-x-6 mb-8">
-                <button className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
+                <button
+                  aria-label="Login with Google"
+                  className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors"
+                >
                   <FcGoogle className="w-6 h-6 text-red-500" />
                 </button>
-                <button className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
+                <button
+                  aria-label="Login with Facebook"
+                  className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors"
+                >
                   <FaFacebook className="w-6 h-6 text-blue-600" />
                 </button>
-                <button className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors">
+                <button
+                  aria-label="Login with GitHub"
+                  className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors"
+                >
                   <AiFillGithub className="w-6 h-6 text-white" />
                 </button>
               </div>
 
               <div className="text-center text-xs text-gray-400 space-y-4">
                 <p>
-                  Don't have an account ?{" "}
+                  Don&apos;t have an account ?{" "}
                   <span className="text-white cursor-pointer hover:underline">
                     <span onClick={() => router.push("/component/signup")}>
                       Signup
