@@ -1,6 +1,6 @@
 # 🟣 Full Auth System - Frontend
 
-A modern frontend for authentication system built with React/Next.js, supporting login, signup, protected routes, and secure token handling.
+A modern frontend for authentication system built with Next.js, supporting login, signup, protected routes, and secure token handling.
 
 ---
 
