@@ -77,7 +77,6 @@ export default function Dashboard() {
         <ul className="space-y-4 text-gray-300">
           <li className="hover:text-white cursor-pointer">Dashboard</li>
           <li className="hover:text-white cursor-pointer">Profile</li>
-          <li className="hover:text-white cursor-pointer">Settings</li>
         </ul>
       </div>
 
